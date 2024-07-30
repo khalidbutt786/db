@@ -17,11 +17,11 @@ CREATE TABLE UserKYC (
     postCode VARCHAR(10),
     dob DATE,
     nationality VARCHAR(100),
-    taxID INT,
+    taxID VARCHAR(255),
     typeOfAccount VARCHAR(50),
     occupation VARCHAR(100),
     email VARCHAR(255) NOT NULL,
     phoneNumber VARCHAR(20),
-    declaration TEXT,
+    bool TEXT,
     FOREIGN KEY (CustomerID) REFERENCES LoginCred(customerID)
 );
