@@ -22,6 +22,6 @@ CREATE TABLE UserKYC (
     occupation VARCHAR(100),
     email VARCHAR(255) NOT NULL,
     phoneNumber VARCHAR(20),
-    bool TEXT,
+    declaration bool,
     FOREIGN KEY (CustomerID) REFERENCES LoginCred(customerID)
 );
